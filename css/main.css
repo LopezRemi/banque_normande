@@ -103,7 +103,7 @@ ol.carousel-indicators {
 }
 .carousel-indicators li {
   height: 5px;
-  background-color: #ffeb3b;
+  background-color: white;
   opacity: .6;
 }
 /* #################  Fin du css carousel  ########## */
