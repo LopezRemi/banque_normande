@@ -17,6 +17,8 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/statistiques.css">
+  
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 
@@ -49,7 +51,7 @@
                 aria-expanded="false">Nos Services</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                <li><a class="dropdown-item" href="statistiques.html">Statistiques</a></li>
+                <li><a class="dropdown-item" href="#">Statistiques</a></li>
                 <li><a class="dropdown-item" href="#">SEO Analysis</a></li>
                 <li>
                   <hr class="dropdown-divider" />
@@ -120,56 +122,20 @@
   <!--###################  fin du carousel   ################# -->
   <!--######################################################## -->
 
-<div class="mainIndex d-flex justify-content-evenly">
-  <div class="card" style="width: 20vw;">
-    <div class="card-body">
-    <h5 class="card-title">Compte courant</h5>
-    <p class="card-text">N:0132520024 fr 45</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Proprietaire : Lopez Rémi</li>
-      <li class="list-group-item">Solde : 12000€</li>
-      <li class="list-group-item">dernière operation : bidule -2.99</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link btn bg-warning">clôturer</a>
-      <a href="#" class="card-link btn bg-warning">Dépot/retrait</a>
-      <a href="#" class="card-link btn bg-warning">Voir</a>
-    </div>
-  </div>
-  <div class="card" style="width: 20vw;">
-    <div class="card-body">
-    <h5 class="card-title">Livret A</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Proprietaire : Lopez Rémi</li>
-      <li class="list-group-item">Solde : 34000€</li>
-      <li class="list-group-item">dernière operation : truc -12.99</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link btn bg-warning">clôturer</a>
-      <a href="#" class="card-link btn bg-warning">Dépot/retrait</a>
-      <a href="#" class="card-link btn bg-warning">Voir</a>
-    </div>
-  </div>
-  <div class="card" style="width: 20vw;">
-    <div class="card-body">
-    <h5 class="card-title">PEL</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Proprietaire : Lopez Rémi</li>
-      <li class="list-group-item">Solde : 102000€</li>
-      <li class="list-group-item">dernière operation : chouette -2000.99</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link btn bg-warning">clôturer</a>
-      <a href="#" class="card-link btn bg-warning">Dépot/retrait</a>
-      <a href="#" class="card-link btn bg-warning">Voir</a>
-    </div>
-  </div>
-</div>
+  <!--###################    statistiques    ################# -->
+  <!--######################################################## -->
+
+  <Div id="mainStat">
+      <h2 class="text-center statTitle">Taux de change Pour 1€</h2>
+  </Div>
+  <div id="showData"></div>
+
+
+
+
+
+  <!--################  fin  statistiques    ################# -->
+  <!--######################################################## -->
 
   <!--#######################  Footer   ###################### -->
   <!--######################################################## -->
@@ -214,7 +180,7 @@
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/layer.js"></script>
+  <script src="js/statistique.js"></script>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
