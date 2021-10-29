@@ -1,6 +1,6 @@
 #mainBlogDiv{
     
-    height: 60vh;
+    height: 65vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -10,24 +10,34 @@
 #titleBlogDiv{
     height: 5vh;
     width: 15vw;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
-#titleBlog{
-
-}
 
 #articleDiv{
     
-    height: 40vh;
-    width: 100vw;
-    margin-top: 10vh;
+    height: 50vh;
+    width: 15vw;
+    margin-top: 5vh;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
 }
 
-#article1, #article2, #article3, #article4 {
+
+#id {
+    padding-left: 3px;
+    border: solid;
+}
+
+#titre{
     
-    width: 20vw;
-    height: 25vh;
-}   
+    padding-left: 3px;
+    border: solid;
+}
+
+#contenu{
+    padding-left: 3px;
+    border: solid;
+    margin-bottom: 2vh;
+}
