@@ -1,0 +1,40 @@
+[
+{"Pays" : "ÉTATS-UNIS D'AMÉRIQUE Dollar américain", 
+"Monnaie" : "1,1648 $"},
+
+{"Pays" : "Livre Sterling / Royaume-UniROYAUME-UNI Livre Sterling" , 
+"Monnaie" : "0,8460 £"},
+
+{"Pays" : "Franc Suisse / SuisseSUISSE Franc Suisse" , 
+"Monnaie" :	"1,0616 SFr."},
+{"Pays" : "Rouble Russe / RussieRUSSIE Rouble Russe" , 
+"Monnaie" :	"82,1426"},
+
+{"Pays" : "Yen / JaponJAPON Yen" , 
+"Monnaie" :	"132,4653 ¥"},
+
+{"Pays" : "Baht / ThaïlandeTHAÏLANDE Baht" , 
+"Monnaie" :	"38,6815 ฿"},
+
+{"Pays" : "Yuan / ChineCHINE Yuan" , 
+"Monnaie" :	"7,4502"},
+
+{"Pays" : "Shekel Israélien / IsraëlISRAËL Shekel Israélien" , "Monnaie" :	"3,6726"},
+
+{"Pays" : "Dollar canadien / CanadaCANADA Dollar canadien" , "Monnaie" :	"1,4390 $"},
+
+{"Pays" : "Rand / Afrique du SudAFRIQUE DU SUD Rand" , "Monnaie" :	"17,8094 R"},
+
+{"Pays" : "Dollar Australien / AustralieAUSTRALIE Dollar Australien" , "Monnaie" :	"1,5468 $"},
+
+{"Pays" : "Dirham marocain / MarocMAROC Dirham marocain" , "Monnaie" :	"10,4955 Dh"},
+
+{"Pays" : "Réal / BrésilBRÉSIL Réal" , "Monnaie" :	"6,5774 R$"},
+
+{"Pays" : "Dinar tunisien / TunisieTUNISIE Dinar tunisien" , "Monnaie" :	"3,2869 DT"},
+
+{"Pays" : "Ariary Malgache / MadagascarMADAGASCAR Ariary Malgache" , "Monnaie" :	"4,610,3559 Ar"},
+
+{"Pays" : "Dong Vietnamien / Viêt NamVIÊT NAM Dong Vietnamien" , "Monnaie" :	"26,405,7946 ₫"}
+]
+
