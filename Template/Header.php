@@ -17,8 +17,6 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/statistiques.css">
-  
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 
@@ -44,15 +42,14 @@
         <div class="collapse navbar-collapse" id="mob-navbar">
           <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+              <a class="nav-link active" aria-current="page" href="index.php">Accueil</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Nos Services</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                <li><a class="dropdown-item" href="#">Statistiques</a></li>
-                <li><a class="dropdown-item" href="#">SEO Analysis</a></li>
+                <li><a class="dropdown-item" href="blog.php">Blog</a></li>
+                <li><a class="dropdown-item" href="statistiques.php">Statistiques</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
@@ -70,12 +67,7 @@
       </div>
     </nav>
   </header>
-  <!--###################   fin du header  ################### -->
-  <!--######################################################## -->
-
-  <!--################## départ du carousel ################## -->
-  <!--######################################################## -->
-  <section id="banner">
+   <section id="banner">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <ol class="carousel-indicators">
         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
@@ -121,71 +113,3 @@
   </section>
   <!--###################  fin du carousel   ################# -->
   <!--######################################################## -->
-
-  <!--###################    statistiques    ################# -->
-  <!--######################################################## -->
-
-  <Div id="mainStat">
-      <h2 class="text-center statTitle">Taux de change Pour 1€</h2>
-  </Div>
-  <div id="showData"></div>
-
-
-
-
-
-  <!--################  fin  statistiques    ################# -->
-  <!--######################################################## -->
-
-  <!--#######################  Footer   ###################### -->
-  <!--######################################################## -->
-  <!-- Remove the container if you want to extend the Footer to full width. -->
-  <div>
-
-    <footer class="bg-dark text-center text-white">
-      <!-- Grid container -->
-      <div class="container p-4 pb-0">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-outline-warning btn-floating m-1" href="#!" role="button"><i
-              class="fab fa-facebook-f"></i></a>
-
-          <!-- Twitter -->
-          <a class="btn btn-outline-warning btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
-          <!-- Google -->
-          <a class="btn btn-outline-warning btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-
-          <!-- Github -->
-          <a class="btn btn-outline-warning btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <div class="text-center text-warning p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2021 Copyright:
-        <a class="text-warning" target="_blank" href="https://github.com/LopezRemi?tab=repositories">Lopez Rémi</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-
-  </div>
-  <!-- End of .container -->
-  <!--#################### Fin Footer   ###################### -->
-  <!--######################################################## -->
-
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/statistique.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-</body>
-
-</html>
