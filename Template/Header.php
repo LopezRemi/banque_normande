@@ -50,6 +50,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="blog.php">Blog</a></li>
                 <li><a class="dropdown-item" href="statistiques.php">Statistiques</a></li>
+                <li><a class="dropdown-item" href="compte.php">Ouvrir un compte</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
@@ -113,3 +114,5 @@
   </section>
   <!--###################  fin du carousel   ################# -->
   <!--######################################################## -->
+
+<main>
