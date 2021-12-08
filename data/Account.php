@@ -1,4 +1,5 @@
 <!-- <div class="mainIndex d-flex justify-content-evenly">
+
   <div class="card" style="width: 20vw;">
     <div class="card-body">
     <h5 class="card-title">Compte courant</h5>
@@ -9,6 +10,7 @@
       <li class="list-group-item">Solde : 12000€</li>
       <li class="list-group-item">dernière operation : bidule -2.99</li>
     </ul>
+    
     <div class="card-body">
       <a href="#" class="card-link btn bg-warning">clôturer</a>
       <a href="#" class="card-link btn bg-warning">Dépot/retrait</a>
@@ -75,7 +77,5 @@ function get_accounts() {
       ],
     ];
 }
-
-$accounts = get_accounts();
 
 ?>
