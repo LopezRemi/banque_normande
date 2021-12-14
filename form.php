@@ -50,9 +50,7 @@
   <form action="insert.php" method="post">
 
   
-
-
-    <p>
+<p>
       <label for="amount">Montant:</label> €
       <input type="number" name="amount" id="amount">
     </p>
