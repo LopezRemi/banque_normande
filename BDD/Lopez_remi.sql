@@ -1,6 +1,10 @@
 DROP DATABASE IF EXISTS banque_normande;
-
 CREATE DATABASE banque_normande CHARACTER SET 'utf8';
+USE banque_normande;
+
+DROP USER IF EXISTS 'BanquePHP'@'localhost';
+CREATE USER 'BanquePHP'@'localhost';
+GRANT ALL PRIVILEGES ON banque_normande.* To 'BanquePHP'@'localhost' IDENTIFIED BY 'banque76';
 
 CREATE TABLE IF NOT EXISTS User (
     id INT NOT NULL AUTO_INCREMENT,
@@ -9,7 +13,7 @@ CREATE TABLE IF NOT EXISTS User (
     user_account_creation DATE NOT NULL,
     birthday DATE NOT NULL,
     email varchar (255) NOT NULL,
-    passwordHash binary (64) NOT NULL,
+    password varchar (64) NOT NULL,
     adresse varchar (128) NOT NULL,
     postcode int (10) NOT NULL,
     phone int (12) NOT NULL,

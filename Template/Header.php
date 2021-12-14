@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!doctype html>
 <html class="no-js" lang="fr">
 
@@ -13,8 +14,7 @@
   <!-- Place favicon.ico in the root directory -->
 
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -35,8 +35,7 @@
         <a class="navbar-brand" href="#">
           <h2 class="text-warning">La Banque Normande</h2>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mob-navbar"
-          aria-label="Toggle">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mob-navbar" aria-label="Toggle">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mob-navbar">
@@ -45,8 +44,7 @@
               <a class="nav-link active" aria-current="page" href="index.php">Accueil</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Nos Services</a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos Services</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="blog.php">Blog</a></li>
                 <li><a class="dropdown-item" href="statistiques.php">Statistiques</a></li>
@@ -61,14 +59,12 @@
               <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <button class="btn btn-warning" type="submit">Login</button>
-          </form>
+          <a class="btn btn-warning" href="logout.php">Logout</a>
         </div>
       </div>
     </nav>
   </header>
-   <section id="banner">
+  <section id="banner">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <ol class="carousel-indicators">
         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
@@ -81,8 +77,7 @@
           <div class="carousel-caption d-none d-md-block">
             <h3>Nous sommes la pour vous !</h3>
             <p>Favoriser la créativité de votre entreprise grace à notre pilotage financier en ligne</p>
-            <a href="https://www.lenouveleconomiste.fr/les-crypto-monnaies-pour-les-nuls-89045/" target="_blank"
-              class="btn btn-warning">En savoir plus</a>
+            <a href="https://www.lenouveleconomiste.fr/les-crypto-monnaies-pour-les-nuls-89045/" target="_blank" class="btn btn-warning">En savoir plus</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -115,4 +110,4 @@
   <!--###################  fin du carousel   ################# -->
   <!--######################################################## -->
 
-<main>
+  <main class="row my-3 mx-3">
