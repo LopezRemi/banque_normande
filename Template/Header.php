@@ -52,14 +52,11 @@
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" target="blank" href="https://github.com/LopezRemi/banque_normande">Explore More</a></li>
+                <li><a class="dropdown-item" target="blank" href="https://github.com/LopezRemi/banque_normande">GitHub</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
           </ul>
-          <a class="btn btn-warning" href="logout.php">Logout</a>
+          <a class="btn btn-warning" href="logout.php">déconnexion</a>
         </div>
       </div>
     </nav>

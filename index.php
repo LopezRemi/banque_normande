@@ -1,5 +1,4 @@
 <?php
-require("data/Account.php");
 include("Template/Header.php");
 require("Login.php")
 ?>

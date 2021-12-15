@@ -58,12 +58,12 @@ values
     );
 
 CREATE TABLE IF NOT EXISTS operation (
-    id int UNSIGNED not null AUTO_INCREMENT,
+    id int not null AUTO_INCREMENT,
     operation_amount int (25) not null,
     operation_status varchar (20) not null,
     operation_date DATE not null,
     operation_type varchar (20) not null,
-    account_id int (20),
+    account_id int not null,
     PRIMARY KEY (id)
 ) ENGINE = INNODB;
 
@@ -73,5 +73,5 @@ ADD CONSTRAINT FK_Account_operation FOREIGN KEY (account_id) REFERENCES Account(
 insert into
     operation
 values
-    (default,20,"done",now(),"transfer",default
+    (default,20,"Terminé",now(),"Virement",default
     );
