@@ -54,7 +54,7 @@ ADD CONSTRAINT FK_user_account FOREIGN KEY (owner_id) REFERENCES User(id);
 insert into
     Account
 values
-    (default,2839281,3222312,"Epargne",now(),default
+    (default,2839281,3000,"Epargne",now(),default
     );
 
 CREATE TABLE IF NOT EXISTS operation (

@@ -1,5 +1,11 @@
 <?php
 include('template/Header.php');
+include_once('Login.php');
+?>
+
+<?php if (isset($_SESSION['LOGGED_USER'])) : ?>   
+
+
 ?>
 <?php
 try {
@@ -20,25 +26,19 @@ if (!empty($_GET) && isset($_GET['id'])) {
     $userStatement = $db->prepare($db_user);
     $userStatement->execute();
     $user = $userStatement->fetchAll();
-
-    $operation_db = "SELECT * from operation INNER JOIN Account ON operation.id = operation.account_id  WHERE account_id = :page_id";
-    $operationStatement = $db->prepare($operation_db);
-    $operationStatement->execute(["page_id" => $id]);
-    $operation = $operationStatement->fetchAll();
 } else {
     $error = 'Compte introuvable !';
 }
 for ($i = 0; $i < count($Account); $i++) {
 ?>
     <div class='col-xl-3 col-md-6'>
-        <div class='card bg-primary text-white mb-4'>
+        <div class='card bg-secondary text-white mb-4'>
             <div class='card-body '>
                 <p class='card-text'>Type de compte : <?php echo $Account[$i]['account_type']; ?></p>
                 <p class='card-text'>N° : <?php echo $Account[$i]['account_number']; ?></p>
                 <p class='card-text'>Solde : <?php echo $Account[$i]['amount']; ?> €</p>
                 <p class='card-text'>Date de création : <?php echo $Account[$i]['account_creation_date']; ?></p>
                 <p class='card-text'>Propriétaire : <?php echo $user[$i]['last_name']; ?> <?php echo $user[$i]['first_name']; ?> </p>
-                <p class='card-text'>Dernière opération : <?php echo $operation[$i]['operation_status']; ?> <br> <?php echo $operation[$i]['operation_type']; ?> - <?php echo $operation[$i]['operation_date']; ?> - <?php echo $operation[$i]['operation_amount']; ?> € </p>
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@ $operation = $operationStatement->fetchAll();
 foreach ($operation as $operations) {
 ?>
     <div class='col-xl-3 col-md-6'>
-        <div class='card bg-primary text-white mb-4'>
+        <div class='card bg-success text-white mb-4'>
             <div class='card-body '>
                 <p class='card-text'>
                 <p class='card-text'>
@@ -88,6 +88,5 @@ foreach ($operation as $operations) {
     </div>
 </form>
 
-<?php
-include('template/Footer.php');
-?>
+<?php include('template/Footer.php');?>
+<?php endif; ?>

@@ -30,7 +30,7 @@ $operation = $operationStatement->fetchAll();
 for ($i = 0; $i < count($Account); $i++) {
 ?>
   <div class='col-xl-3 col-md-6'>
-    <div class='card bg-primary text-white mb-4'>
+    <div class='card bg-secondary text-white mb-4'>
       <div class='card-body '>
         <p class='card-text'>Type de compte : <?php echo $Account[$i]['account_type']; ?></p>
         <p class='card-text'>N° : <?php echo $Account[$i]['account_number']; ?></p>
