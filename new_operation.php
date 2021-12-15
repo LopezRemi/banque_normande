@@ -12,28 +12,19 @@ $AccountStatement = $db->prepare($sqlQuery);
 $AccountStatement->execute();
 $Account = $AccountStatement->fetchAll();
 
-
-
-
-
-
-
-
 if (isset($_POST['operation_type']) && isset($_POST['operation_amount'])) {
     $operation_type =  htmlspecialchars($_REQUEST['operation_type']);
     $operation_amount =  htmlspecialchars($_REQUEST['operation_amount']);
-    $operation_status =  "En cours";
+    $operation_status =  "Terminé";
     $operation_date = date("Y-m-d");
     $account_id = $_GET['id'];
 }
-
 
 if ($operation_type == "Dépot") {
     $sql = "UPDATE Account SET amount = amount + $operation_amount WHERE id = $id";
 } else {
     $sql = "UPDATE Account SET amount = amount - $operation_amount WHERE id = $id";
 }
-
 
 $AccountStatement = $db->prepare($sql);
 $AccountStatement->execute();
