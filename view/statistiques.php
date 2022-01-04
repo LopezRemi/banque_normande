@@ -1,4 +1,4 @@
-<?php include("Template/Header.php") ?>
+<?php include("../Template/Header.php") ?>
 
 <!--###################    statistiques    ################# -->
 <!--######################################################## -->
@@ -11,4 +11,4 @@
 <!--################  fin  statistiques    ################# -->
 <!--######################################################## -->
 
-<?php include("Template/Footer.php") ?>
+<?php include("../Template/Footer.php") ?>

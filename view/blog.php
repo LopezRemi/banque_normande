@@ -1,4 +1,4 @@
-<?php include ("Template/Header.php")?>
+<?php include ("../Template/Header.php")?>
 
   
   <!--#######################  BLOG   ######################## -->
@@ -9,4 +9,4 @@
   <!--#######################  Footer   ###################### -->
   <!--######################################################## -->
 
-<?php include ("Template/Footer.php")?>
+<?php include ("../Template/Footer.php")?>

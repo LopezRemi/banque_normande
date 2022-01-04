@@ -1,16 +1,7 @@
 <?php
-try {
-    $db = new PDO('mysql:host=localhost;dbname=banque_normande', "BanquePHP", "banque76");
-} catch (\Exception $e) {
-    echo "Erreur lors de la connexion à la base de données: " . $e->getMessage() . "<br/>";
-    die();
-}
+require('ConnexionBDD.php');
+require('StatementLOGIN.php');
 
-// On récupère tout le contenu de la table user
-$sqlQuery = 'SELECT email, password, id FROM User';
-$userStatement = $db->prepare($sqlQuery);
-$userStatement->execute();
-$users = $userStatement->fetchAll();
 
 // Validation du formulaire
 if (isset($_POST['email']) &&  isset($_POST['password'])) {

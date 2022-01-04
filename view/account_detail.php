@@ -1,31 +1,22 @@
 <?php
-include('template/Header.php');
-include_once('Login.php');
+include('../template/Header.php');
+include_once('../Model/Login.php');
 ?>
 
 <?php if (isset($_SESSION['LOGGED_USER'])) : ?>   
 
 
-?>
+
 <?php
-try {
-    $db = new PDO('mysql:host=localhost;dbname=banque_normande', "BanquePHP", "banque76");
-} catch (\Exception $e) {
-    echo "Erreur lors de la connexion à la base de données: " . $e->getMessage() . "<br/>";
-    die();
-}
+require('../Model/connexionBDD.php');
 
+?>
+
+<?php
 if (!empty($_GET) && isset($_GET['id'])) {
-    $id = htmlspecialchars($_GET['id']);
-    $sqlQuery = "SELECT * FROM Account WHERE id = '$id'";
-    $AccountStatement = $db->prepare($sqlQuery);
-    $AccountStatement->execute();
-    $Account = $AccountStatement->fetchAll();
-
-    $db_user = 'SELECT first_name, last_name from User INNER JOIN Account ON user.id = Account.owner_id';
-    $userStatement = $db->prepare($db_user);
-    $userStatement->execute();
-    $user = $userStatement->fetchAll();
+    
+    require('../Model/userAccountSQL2.php');
+   
 } else {
     $error = 'Compte introuvable !';
 }
@@ -46,11 +37,8 @@ for ($i = 0; $i < count($Account); $i++) {
 }
 ?>
 <?php
-$operation_db = "SELECT * from operation WHERE account_id = :page_id";
-$operationStatement = $db->prepare($operation_db);
-$operationStatement->execute(["page_id" => $id]);
-$operation = $operationStatement->fetchAll();
 
+require('../Model/useAccountOperationSQL.php');
 foreach ($operation as $operations) {
 ?>
     <div class='col-xl-3 col-md-6'>
@@ -69,7 +57,7 @@ foreach ($operation as $operations) {
 }
 ?>
 
-<form method="post" action="new_operation.php?id=<?php echo $id ?>" class="row g-3 m-2">
+<form method="post" action="../Model/new_operation.php?id=<?php echo $id ?>" class="row g-3 m-2">
     <h3>Effectuer une opération</h3>
     <div class="col-md-3">
         <label for="account_type" class="form-label">Opération à effectuer</label>
@@ -88,5 +76,5 @@ foreach ($operation as $operations) {
     </div>
 </form>
 
-<?php include('template/Footer.php');?>
+<?php include('../template/Footer.php');?>
 <?php endif; ?>
